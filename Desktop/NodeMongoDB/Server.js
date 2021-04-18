@@ -26,7 +26,7 @@ app.get('/students',(req,res)=>{
 
 app.get('/students/:id',(req,res)=>{
     var studentid = req.params.id
-    console.log(studentid)
+    console.log('Student'+studentid)
     MongoClient.connect(url,(err,database)=>{
         if(err){
             throw err
